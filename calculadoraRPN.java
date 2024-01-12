@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 public class calculadoraRPN {
     public static void main(String[] args) {
-        boolean pilaVacia = 
+        boolean pilaVacia = true
         Stack<Integer> pila = new Stack<>();
 
     }    
