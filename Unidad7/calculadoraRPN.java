@@ -20,7 +20,7 @@ public class calculadoraRPN {
                 //Si no hay suficientes operadores saltará un mensaje de error
                 } else if (pila.size() < 2) {
                     System.out.println("Error: no hay suficientes operadores para realizar la operación");
-                    break; 
+                    continue;
                 }
                 //Asignamos a dos variables el resultado de la pila
                 double operador2 = pila.pop();
