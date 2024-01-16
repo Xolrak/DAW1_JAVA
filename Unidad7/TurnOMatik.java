@@ -17,6 +17,7 @@ public class TurnOMatik {
                 System.out.println("Saliendo...");
                 break;
             } else {
+                //Se hace un switch para ejecutar las distintas acciones
                 switch (action) {
                     case "1":
                         System.out.println("Escriba el nombre del nuevo cliente: ");
@@ -38,6 +39,8 @@ public class TurnOMatik {
                         }
                         break;
                     default:
+                        //En caso de que el usuario haya puesto un tipo de accion que no 
+                        //sea 0, 1, 2 o 3 se imprimirá un mensaje de error
                         System.out.println("Entrada no aceptada, escriba un valor valido");
                         sc.close();
                         return;
