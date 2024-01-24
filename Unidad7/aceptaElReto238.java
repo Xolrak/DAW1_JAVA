@@ -9,7 +9,8 @@ public class aceptaElReto238 {
         System.out.println("Cantidad de billetes a repartir: ");
         int billetes = sc.nextInt();
         System.out.println("Cantidad de miembros de la banda: ");
-        int thief = sc.nextInt();
+        int thiefCount = sc.nextInt();
+        
         sc.close();
     }
 }
