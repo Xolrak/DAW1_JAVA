@@ -1,3 +1,4 @@
+//Carlos C de DAW1
 public class Fraccion {
     private int numerador;
     private int denominador;
@@ -42,7 +43,7 @@ public class Fraccion {
             System.out.println("Error: No se puede dividir por cero.");
         }
     }
-    // Método privado para calcular el maximo común divisor (MCD)
+    // Método privado para calcular el maximo común divisor
     private int mcd(int a, int b) {
         if (b == 0) {
             return a;

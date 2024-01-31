@@ -1,3 +1,4 @@
+//Carlos C de DAW1
 public class cafetera {
        //declaracion de variables
        private int capacidadMaxima;
