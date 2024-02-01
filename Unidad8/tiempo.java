@@ -7,5 +7,4 @@ public class tiempo {
     private int minutoMaximos;
     private int horaMaximas;
     private int horaActual;
-    //
 }
