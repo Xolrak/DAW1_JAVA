@@ -4,29 +4,36 @@ public class Pizza {
     private String tamano;
     private String tipo;
     private String estado;
-    private int totalPedidas;
-    private int totalServidas;
+    private static int totalPedidas;
+    private static int totalServidas;
     //Se establece como estado standard de las pizzas "pedida"
-    public Pizza (String tamano, String tipo) {
+    public Pizza (String tipo, String tamano) {
         this.tamano = tamano;
         this.tipo = tipo;        
         this.estado = "pedida";
         totalPedidas += 1;
     }
+    public void sirve () {
+        if ("servida".equals(this.estado)) {
+            System.out.println("pizza servida");
 
-    // Getters y Setters //
-    // Getters
-    public int getTotalPedidas() {
+        } else {
+            this.estado = "servida";
+            totalServidas += 1;
+        }
+    }
+    // Getters //
+    public static int getTotalPedidas() {
         return totalPedidas;
     }
-    public int getTotalServidas() {
+    public static int getTotalServidas() {
         return totalServidas;
     }
-    // Setters
-    public void setTotalPedidas (int pedidas) {
-        this.totalPedidas = pedidas;
+    public String getTamano () {
+        return this.tamano;
     }
-    public void setTotalServidas (int servidas) {
-        this.totalServidas = servidas;
+    // Se pasa a String
+    public String toString () {
+        return "pizza " + tipo + " , " + tamano + " ," + estado;
     }
 }
