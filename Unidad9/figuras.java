@@ -1,6 +1,6 @@
 // Carlos C de DAW1 //
-public class figuras {
+public abstract class figuras {
     // declaro las variables
-    private double area;
-    private double perimetro;
+    protected double area;
+    protected double perimetro;
 }
