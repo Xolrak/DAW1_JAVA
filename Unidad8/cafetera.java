@@ -43,7 +43,7 @@ public class cafetera {
        public void servirTaza (int capacidadTaza) {
         if (capacidadActual >= capacidadTaza) {
             capacidadActual -= capacidadTaza;
-            System.out.println("Le he servido una taza de " + capacidadTaza + "ml")
+            System.out.println("Le he servido una taza de " + capacidadTaza + "ml");
         } else {
             System.out.println("No queda suficiente café");
             capacidadActual = 0;
