@@ -1,4 +1,7 @@
 //Carlos C de DAW1
+
+import java.util.Scanner;
+
 public class cafetera {
        //declaracion de variables
        private int capacidadMaxima;
@@ -61,4 +64,51 @@ public class cafetera {
             capacidadActual = capacidadMaxima;
         }
        }
+        public static void main (String [] args) {
+        Scanner sc = new Scanner(System.in);
+        // Creating an instance of Cafetera with default values
+        cafetera cafetera = new cafetera();
+        boolean bool=false;
+        while (!bool){
+            System.out.println("");
+            System.out.println("Menu: ");
+            System.out.println("1. Servir una taza");
+            System.out.println("2. Agregar cafe");
+            System.out.println("3. vaciar cafetera");
+            System.out.println("4. Maxear cafetera");
+            System.out.println("5. Salir");
+            System.out.print("Que haces?: ");
+            String answ = sc.nextLine();
+            switch (answ) {
+                case "1": //servir 1 taza d cafe
+                    System.out.println("Antes hay " + cafetera.getcapacidadActual() + "ml de cafe");
+                    cafetera.servirTaza(200);
+                    System.out.println("Capacidad Actual Después de Servir Taza: " + cafetera.getcapacidadActual());
+                    break;
+                case "2": //agregar cafe
+                    int add = sc.nextInt();
+                    cafetera.agregarCafe(add);
+                    System.out.println("Capacidad Actual Después de agregar cafe: " + cafetera.getcapacidadActual());
+                    break;
+                case "3": //Vaciar cafetera
+                    System.out.println("Antes hay" + cafetera.getcapacidadActual() + "ml de cafe");
+                     cafetera.vaciarTetera();
+                    System.out.println("Ahora quedan : " + cafetera.getcapacidadActual() + "ml de cafe");
+                    break;
+                case "4": //Maxear cafetera
+                    System.out.println("Antes hay" + cafetera.getcapacidadActual() + "ml de cafe");
+                    cafetera.llenarCafetera();
+                    System.out.println("Ahora quedan : " + cafetera.getcapacidadActual() + "ml de cafe");
+                    break;
+                case "5": //Salir
+                    System.out.println("En la cafetera habian : " + cafetera.getcapacidadActual() + "ml de cafe");
+                    bool=true;
+                    break;
+                default:
+                    break;
+            }
+            
+           
+        }
+    }
 }

@@ -13,19 +13,19 @@ public class ejercicio2 {
         System.out.println("¿Has superado la prueba de acceso? (S/N)");
         prueba_acceso_superada = scanner.nextLine();
 
-        if (gm_superado == "S"); {
+        if (gm_superado == "S") {
             gs_admision = true;
             System.out.println("Reunes los requisitos para acceder al grado superior");
             }
-            if (bachiller_superado == "S"); {
+            if (bachiller_superado == "S") {
             gs_admision = true;
             System.out.println("Reunes los requisitos para acceder al grado superior");
             }
-            if (prueba_acceso_superada == "S"); {
+            if (prueba_acceso_superada == "S") {
             gs_admision = true;
             System.out.println("Reunes los requisitos para acceder al grado superior");
             }
-                if (gs_admision = false); {
+                if (gs_admision = false) {
                     System.out.println("No reunes los requisitos para acceder al grado superior");
                     }
             scanner.close();
