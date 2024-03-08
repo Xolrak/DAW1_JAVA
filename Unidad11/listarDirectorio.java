@@ -17,6 +17,7 @@ public class listarDirectorio {
                     System.out.println("\t" + file.getName());
                 }
             }
+        sc.close();
         }
     }
 }
