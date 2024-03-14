@@ -20,7 +20,7 @@ public class ejercicio2 {
             System.out.println("Introduzca la contraseña: ");
             contrasena = sc.nextLine();
             // se juntan el usuario y la contraseña en una unica variable para añadirlo al fichero sin problemas
-            userpass = "\n" + usuario + ":" + contrasena;
+            userpass = "\n" + usuario + ";" + contrasena + ";";
             try {
                 // se comprueba que el archivo exista, si no se crea
                 if (!file.exists()) {
@@ -40,9 +40,7 @@ public class ejercicio2 {
                 e.printStackTrace();
             } 
         }
-            
         sc.close();
-    
     }
 
 }
