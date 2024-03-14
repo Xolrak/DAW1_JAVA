@@ -31,18 +31,18 @@ public class ejercicio2 {
                 entrada.write(userpass);
                 // cierro el archivo
                 entrada.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                System.out.print("Cerrar programa? S/N");
+                System.out.println("Cerrar programa? S/N");
                 off = sc.nextLine();
                 if ("S".equalsIgnoreCase(off)) {
                     bucle = true;
                 }
-            }
-            sc.close();
-    
+            } catch (IOException e) {
+                e.printStackTrace();
+            } 
         }
-
+            
+        sc.close();
+    
     }
+
 }
