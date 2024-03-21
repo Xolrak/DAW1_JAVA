@@ -1,4 +1,3 @@
-// Carlos C de DAW1 ^^ //
 // librerias importadas
 import java.io.*;
 
