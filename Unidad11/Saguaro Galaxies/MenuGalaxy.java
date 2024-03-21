@@ -37,7 +37,6 @@ public class MenuGalaxy {
                             // se enseña por pantalla el objeto
                             System.out.println("OBJECT: " + object);
                         }
-
                         scanner.close();
                         dis.close();
                         fis.close();
